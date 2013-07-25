@@ -90,14 +90,14 @@
   <lg facs="#text_page1">
  <!-- lg is een linegroup, vraag is of dit optioneel is -->
    <l facs="#line1">eerste regel</l>
- <!--lines (regels), voor transcriptieregels geschikte tag -->
-   <line facs="#line2">tweede regel</line>
-   <line facs="#line3">derde regel</line>
-   <line facs="#line4">vierde regel</line>
-   <line facs="#line5">vijfde regel</line>
-   <line facs="#line6">zesde regel</line>
-   <line facs="#line7">zevende regel</line>
-   <line facs="#line8">achtste regel</line>
+ <!--l staat voor line (regel), voor transcriptieregels geschikte tag -->
+   <l facs="#line2">tweede regel</l>
+   <l facs="#line3">derde regel</l>
+   <l facs="#line4">vierde regel</l>
+   <l facs="#line5">vijfde regel</l>
+   <l facs="#line6">zesde regel</l>
+   <l facs="#line7">zevende regel</l>
+   <l facs="#line8">achtste regel</l>
   </lg>
  </div>
  <!--een annotatie tbv een  -->
