@@ -1,0 +1,109 @@
+<TEI>
+ <teiHeader>
+<!-- teiHeader hier opnemen met metadata waaronder language zie http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html-->
+ <fileDesc>
+  <titleStmt>
+   <title>
+<!-- title of the resource -->
+   </title>
+  </titleStmt>
+  <publicationStmt>
+   <p>(Information about distribution of the resource)</p>
+  </publicationStmt>
+  <sourceDesc>
+   <p>(Information about source from which the resource derives)</p>
+  </sourceDesc>
+ </fileDesc>
+ </teiHeader>
+
+<facsimile>
+<!-- surface bevat de scan en de afmeting (deze afmetingen bepalen de verhoudingen van de zones, tevens een id van de pagina, er kunnen meerdere surfaces zijn, zie http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html) -->
+ <surface
+   xml:id="page1"
+   ulx="0"
+   uly="0"
+   lrx="355"
+   lry="678">
+  <graphic url="scanx.jpg"/>
+<!-- zones bevatten alle plekken waar teksten komen te liggen plus hotspots (polygoon is ook mogelijk, zie laatste voorbeeld)-->
+  <zone
+    ulx="83"
+    uly="223"
+    lrx="272"
+    lry="256"
+    xml:id="line1"/>
+  <zone
+    ulx="92"
+    uly="251"
+    lrx="256"
+    lry="282"
+    xml:id="line2"/>
+  <zone
+    ulx="21"
+    uly="281"
+    lrx="330"
+    lry="308"
+    xml:id="line3"/>
+  <zone
+    ulx="36"
+    uly="306"
+    lrx="320"
+    lry="332"
+    xml:id="line4"/>
+  <zone
+    ulx="85"
+    uly="535"
+    lrx="249"
+    lry="556"
+    xml:id="line5"/>
+  <zone
+    ulx="97"
+    uly="556"
+    lrx="241"
+    lry="576"
+    xml:id="line6"/>
+  <zone
+    ulx="58"
+    uly="577"
+    lrx="281"
+    lry="595"
+    xml:id="line7"/>
+  <zone
+    ulx="68"
+    uly="595"
+    lrx="271"
+    lry="613"
+    xml:id="line8"/>
+  <zone
+    points="4.8,31.0 5.4,30.7 5.5,32.2 5.8,32.8 6.1,33.4 5.5,33.7 5.1,33.3 4.6,32.2"
+    xml:id="hotspot1"/>
+ </surface>
+</facsimile>
+
+<!-- alternatieve mapping is om in de zones de tekst te plaatsen (dat heet 'embedded transcription'): http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PH-surfzone -->>
+<text>
+<!-- tekst bevat alle tekst van het document, voorlopig worden geen tags verder ondersteund, heeft verder geen impact voor opzet -->
+  <body>
+  <div>
+<pb xml:id="p1"/>
+ <!-- pb zijn pagebreaks, en zijn door de id verbonden met een surface -->
+  <lg facs="#text_page1">
+ <!-- lg is een linegroup, vraag is of dit optioneel is -->
+   <l facs="#line1">eerste regel</l>
+ <!--lines (regels), voor transcriptieregels geschikte tag -->
+   <line facs="#line2">tweede regel</line>
+   <line facs="#line3">derde regel</line>
+   <line facs="#line4">vierde regel</line>
+   <line facs="#line5">vijfde regel</line>
+   <line facs="#line6">zesde regel</line>
+   <line facs="#line7">zevende regel</line>
+   <line facs="#line8">achtste regel</line>
+  </lg>
+ </div>
+ <!--een annotatie tbv een  -->
+<note target="#hotspot1">De windroos die op deze kaart staat is later toegevoegd</note>
+<note type="translation" target="#page1">Dit is de vertaling in modern Nederlands van pagina 1</note>
+<note type="translation" xml:lang="en" target="#page1">This is the English translation of page 1</note>
+  </body>
+ </text>
+</TEI>
