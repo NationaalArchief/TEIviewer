@@ -1,14 +1,14 @@
 <TEI>
- <teiHeader>
+ <teiHeader xml:lang="nl">
 <!-- teiHeader hier opnemen met metadata waaronder language zie http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html-->
  <fileDesc>
   <titleStmt>
-   <title>
-<!-- title of the resource -->
-   </title>
+    <title>Documenttitel</title>
+    <author>Oldebarneveldt</author>  
   </titleStmt>
   <publicationStmt>
    <p>(Information about distribution of the resource)</p>
+    <date when="1868">1868</date>
   </publicationStmt>
   <sourceDesc>
    <p>(Information about source from which the resource derives)</p>
